@@ -45,3 +45,25 @@ function step(input: Schema001) {
   }
 }
 ```
+
+## Using
+
+```zsh
+go get github.com/kurrik/clearstring
+```
+
+Then use:
+```go
+str := clearstring.Get(`
+    |Any literal
+    |which needs to be split
+    |on multiple lines for readability.
+`)
+```
+
+`str` will be:
+```
+Any literal
+which needs to be split
+on multiple lines for readability.
+```
